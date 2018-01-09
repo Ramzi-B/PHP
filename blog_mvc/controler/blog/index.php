@@ -1,7 +1,7 @@
 <?php
 
   // On demande les 5 derniers billets (modèle)
-  include_once('modele/blog/get_billets.php');
+  include_once('model/blog/get_billets.php');
   $billets = get_billets(0, 5);
 
   // On effectue du traitement sur les données (controlleur)
