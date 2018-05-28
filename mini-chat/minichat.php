@@ -11,18 +11,18 @@
 
     <form action="minichat_post.php" method="post">
       <p>
-        <label for="pseudo">Pseudo</label> :
+				<label for="pseudo">Pseudo</label> :
         <!-- Retenir le pseudo du visiteur en utilisant un cookie -->
         <input type="text" name="pseudo" value="<?php
          if(isset($_COOKIE['pseudo'])){
            echo $_COOKIE['pseudo'];
-          } ?> " id="pseudo"><br>
-
-        <label for="message">Message</label> :
-        <input type="text" name="message" id="message"><br>
-
-        <input type="submit" value="Envoyer">
-      </p>
+				 } ?> " id="pseudo">
+			</p>
+			<p>
+				<label for="message">Message</label> :
+				<input type="text" name="message" id="message">
+			</p>
+			<input type="submit" value="Envoyer">
     </form>
 
     <?php
