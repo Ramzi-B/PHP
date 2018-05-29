@@ -9,13 +9,11 @@ require_once 'Manager.php';
         public function getPosts()
         {
             $db = $this->dbConnect();
-            $req = $db->query
-								('SELECT id, title, content, DATE_FORMAT(created_at, \'%d/%m/%Y à %H:%i\')
-											AS created_at_fr
-							  		FROM posts
-								ORDER BY created_at
-		 					DESC LIMIT 0, 5');
-							
+            $req = $db->query('SELECT id, title, content, DATE_FORMAT(created_at, \'%d/%m/%Y à %H:%i\')
+														 			 AS created_at_fr
+													 			 FROM posts
+											 			 ORDER BY created_at
+										 			 DESC LIMIT 0, 5');
             return $req;
         }
 
