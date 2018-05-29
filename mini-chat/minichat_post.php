@@ -1,7 +1,7 @@
 <?php
 
   // Connexion à la base de données
-  include 'inc/config_db.php';
+  include 'inc/db.php';
 
   if(isset($_POST['pseudo'])){
     setcookie('pseudo', $_POST['pseudo'], time() + 365*24*3600, null, null, false, true);
@@ -14,7 +14,7 @@
 
     // Insertion du message à l'aide d'une requête préparée
     $req = $bdd->prepare('INSERT INTO minichat (pseudo, message, date_message) VALUES(?, ?, NOW())');
-    $req->execute(array($pseudo, $message));
+    $req->execute([$pseudo, $message]);
 
     // Redirection du visiteur vers la page du minichat
     header('Location: minichat.php');
