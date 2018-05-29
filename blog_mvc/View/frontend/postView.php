@@ -1,11 +1,7 @@
-<?php
-	$title = 'ERROR';
-	ob_start();
-?>
+<?php $title = 'ERROR'; ?>
+<?php ob_start(); ?>
 
 <p><?= $errorMessage ?></p>
 
-<?php
-	$content = ob_get_clean();
-	require 'frontend/template.php';
-?>
+<?php $content = ob_get_clean(); ?>
+<?php	require 'frontend/template.php'; ?>

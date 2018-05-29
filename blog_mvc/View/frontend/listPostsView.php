@@ -1,8 +1,5 @@
-<?php
-	$title = 'Le blog';
-	ob_start();
-?>
-
+<?php $title = 'Le blog'; ?>
+<?php	ob_start(); ?>
 
 <?php while ($data = $posts->fetch()): ?>
 
@@ -23,7 +20,5 @@
 
 <?php $posts->closeCursor(); ?>
 
-<?php
-	$content = ob_get_clean();
-	require 'template.php';
-?>
+<?php	$content = ob_get_clean(); ?>
+<?php	require 'template.php'; ?>
