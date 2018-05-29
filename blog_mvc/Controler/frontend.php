@@ -1,20 +1,20 @@
 <?php
 
-    require_once 'Model/CommentManager.php';
-    require_once 'Model/PostManager.php';
+require_once 'Model/CommentManager.php';
+require_once 'Model/PostManager.php';
 
-    function listPosts()
-    {
-        $postManager = new hackawax\blog_mvc\Model\PostManager;
-        $posts = $postManager->getPosts();
+function listPosts()
+{
+    $postManager = new hackawax\blog_mvc\Model\PostManager;
+    $posts = $postManager->getPosts();
 
-        require 'View/frontend/listPostsView.php';
-    }
+    require 'View/frontend/listPostsView.php';
+}
 
-    function post()
-    {
-    }
+function post()
+{
+}
 
-    function addComment()
-    {
-    }
+function addComment()
+{
+}

@@ -1,18 +1,18 @@
 <?php
 
-    namespace hackawax\blog_mvc\Model;
+namespace hackawax\blog_mvc\Model;
 
 require_once 'Manager.php';
 
-    class CommentManager extends Manager
+class CommentManager extends Manager
+{
+    public function getComments($postId)
     {
-        public function getComments($postId)
-        {
-            $db = $this->dbConnect();
-        }
-
-        public function postComments($postId, $author, $comment)
-        {
-            $db = $this->dbConnect();
-        }
+		$db = $this->dbConnect();
     }
+
+    public function postComments($postId, $author, $comment)
+    {
+		$db = $this->dbConnect();
+    }
+}
