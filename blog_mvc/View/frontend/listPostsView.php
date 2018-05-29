@@ -16,7 +16,7 @@
 		<p><?= nl2br(htmlspecialchars($data['content'])) ?></p>
 	</div><!-- /.blog-post -->
 
-<?php endWhile; ?>
+<?php endwhile; ?>
 
 <?php $posts->closeCursor(); ?>
 
