@@ -7,7 +7,7 @@
 															AS date_message_fr
 														FROM minichat
 												ORDER BY date_message
-											DESC LIMIT 0, 15');
+											DESC LIMIT 0, 10');
 ?>
 <!DOCTYPE html>
 <html lang="fr">
