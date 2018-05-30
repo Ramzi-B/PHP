@@ -4,10 +4,10 @@
 
 	// Récupération des 10 derniers messages
 	$responce = $bdd->query('SELECT pseudo, message, DATE_FORMAT(date_message, \'%d/%m/%Y à %H:%i:%s \')
-															AS date_message_fr
-														FROM minichat
-												ORDER BY date_message
-											DESC LIMIT 0, 10');
+															 AS date_message_fr
+														 FROM minichat
+												 ORDER BY date_message
+											 DESC LIMIT 0, 10');
 ?>
 <!DOCTYPE html>
 <html lang="fr">
