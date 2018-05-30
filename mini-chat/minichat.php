@@ -9,6 +9,7 @@
 												 ORDER BY date_message
 											 DESC LIMIT 0, 10');
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -57,7 +58,7 @@
 
 				<div class="form-control">
 					<input class="btn" type="submit" value="Envoyer">
-					<input class="btn" href="minichat.php" value="Refresh"
+					<input class="btn" href="minichat.php" value="Refresh">
 				</div>
 			</form>
 

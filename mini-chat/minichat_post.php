@@ -6,9 +6,10 @@
   if(isset($_POST['pseudo'])){
     setcookie('pseudo', $_POST['pseudo'], time() + 365*24*3600, null, null, false, true);
   }
+	
   // Verifier si les champs sont vides
   if (isset($_POST['pseudo']) && isset($_POST['message']) && !empty($_POST['pseudo']) && !empty($_POST['message'])) {
-    // Sécuriser les données
+		// Sécuriser les données
     $pseudo = htmlspecialchars($_POST['pseudo']);
     $message = htmlspecialchars($_POST['message']);
 
