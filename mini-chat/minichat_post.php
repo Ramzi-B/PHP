@@ -17,7 +17,7 @@
     $req->execute([$pseudo, $message]);
 
     // Redirection du visiteur vers la page du minichat
-    header('Location: minichat.php');
+		header('Location: minichat.php?pseudo=' . $_POST['pseudo']);
   }
   else {
     // Message d'erreur
