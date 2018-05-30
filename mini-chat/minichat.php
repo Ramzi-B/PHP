@@ -3,7 +3,7 @@
 	include 'inc/db.php';
 
 	// Récupération des 10 derniers messages
-	$responce = $bdd->query('SELECT pseudo, message, DATE_FORMAT(date_message, \'%d/%m/%Y à %H:%i:%s \ ')
+	$responce = $bdd->query('SELECT pseudo, message, DATE_FORMAT(date_message, \'%d/%m/%Y à %H:%i:%s \')
 															 AS date_message_fr
 														 FROM minichat
 												 ORDER BY date_message
@@ -29,7 +29,7 @@
 		<main class="container">
 			<h3>Let's Chat</h3>
 
-			<!-- Affichage de chaque message (toutes les données sont protégées par htmlspecialchars)-->
+			<!-- Affichage de chaque message (toutes les données sont protégées par htmlspecialchars) -->
 			<section class="wrap">
 				<?php while ($data = $responce->fetch()): ?>
 
