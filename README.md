@@ -10,3 +10,7 @@
 7. Passage du modèle en objet
 8. Tirer parti de l'héritage
 9. Utiliser les namespaces
+
+### mini-chat
+
+### page_with_mdp
