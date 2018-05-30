@@ -57,7 +57,7 @@
 
 				<div class="form-control">
 					<input class="btn" type="submit" value="Envoyer">
-					<input class="btn" href="minichat.php" value="Refresh">
+					<input class="btn" href="minichat.php" value="Refresh"
 				</div>
 			</form>
 
