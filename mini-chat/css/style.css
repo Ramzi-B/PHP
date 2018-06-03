@@ -11,6 +11,7 @@ body {
 	line-height: 1.5;
   background-color: #FFDC00;
 	color: black;
+	height: 100vh;
 }
 
 *,
@@ -20,22 +21,24 @@ body {
 }
 
 .container {
-	padding-top: 40px;
+	padding-top: 100px;
 	max-width: 75%;
 	margin: 0 auto;
 }
 
 .btn {
+	margin-top: 4%;
 	padding: 10px 15px;
 	font-size: 1.2rem;
 	font-weight: 700;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 	text-decoration: none;
 	text-transform: uppercase;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+	color: black;
 	border-radius: 4%;
 	border: 1px solid rgba(0, 0, 0, 0.6);
-	color: black;
 	background: transparent;
+	transition: all .3s ease-in;
 }
 
 .btn:hover {
@@ -50,11 +53,11 @@ header {
 }
 
 h1, h2 {
+	margin: 0;
 	font-family: 'Teko', sans-serif;
 	font-size: 3rem;
-	line-height: 50px;
-	margin: 0;
 	text-transform: uppercase;
+	line-height: 50px;
 	color: yellow;
 }
 
@@ -63,13 +66,23 @@ main > h2 {
 }
 
 .wrap {
-	margin-bottom: 5%;
-	padding: 15px;
-	min-height: 250px;
-	font-size: 1.4rem;
-	background: rgba(255,255,255,0.3);
-	box-shadow: inset 1px 2px 5px 4px rgba(0,0,0,.2);
+	margin-bottom: 20%;
+	padding: 5px;
+	max-height: 150px;
+	background: rgba(255,255,255, 0.2);
+	box-shadow: inset 2px 2px 5px 1px rgba(0,0,0,.2);;
 	overflow: auto;
+}
+
+.meta-data {
+	display: flex;
+	width: 100%;
+	font-size: 1.2rem;
+}
+
+.meta-data span {
+	flex: 1;
+	font-size: 1.4rem;
 }
 
 .form-group {
@@ -95,13 +108,13 @@ main > h2 {
 	transition: all .6s ease-in-out;
 }
 
-.form-control input:hover,
+.form-control input[type="text"]:hover,
 .form-control textarea:hover {
 	background: #CD2548;
 }
 
 footer {
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	width: 100%;
 	min-height: 50px;
@@ -110,8 +123,8 @@ footer {
 }
 
 footer p {
-	font-size: 1.6rem;
+	padding-right: 15px;
+	font-size: 1.2rem;
 	text-transform: uppercase;
 	text-align: right;
-	padding-right: 15px;
 }

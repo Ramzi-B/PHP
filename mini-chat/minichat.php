@@ -1,14 +1,14 @@
 <?php
 
-    // Connexion à la base de données
-    include 'inc/db.php';
+  // Connexion à la base de données
+  include 'inc/db.php';
 
-    // Récupération des 10 derniers messages
-    $responce = $bdd->query('SELECT pseudo, message, DATE_FORMAT(date_message, \'%d/%m/%Y à %H:%i:%s\')
-															 	 AS date_message_fr
-														 	 FROM minichat
-												 	 ORDER BY date_message
-											 	 DESC LIMIT 0, 10');
+  // Récupération des 10 derniers messages
+  $responce = $bdd->query('SELECT pseudo, message, DATE_FORMAT(date_message, \'%d/%m/%Y à %H:%i:%s\')
+														 	 AS date_message_fr
+													 	 FROM minichat
+											 	 ORDER BY date_message
+										 	 DESC LIMIT 0, 10');
 ?>
 
 <!DOCTYPE html>
@@ -36,9 +36,9 @@
 				<?php while ($data = $responce->fetch()): ?>
 
 					<div class="meta-data">
-						<?= htmlspecialchars($data['date_message_fr']) ?>
-						<?= htmlspecialchars($data['pseudo']) ?>
-						<?= htmlspecialchars($data['message']) ?>
+						<span><?= htmlspecialchars($data['pseudo']) ?></span>
+						<span><?= htmlspecialchars($data['message']) ?></span>
+						<span><?= htmlspecialchars($data['date_message_fr']) ?></span>
 					</div>
 
 				<?php endwhile ?>
