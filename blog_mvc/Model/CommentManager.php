@@ -1,7 +1,6 @@
 <?php
 
 namespace hackawax\blog_mvc\Model;
-
 require_once 'Manager.php';
 
 class CommentManager extends Manager
